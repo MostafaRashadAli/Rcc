@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahmoudgamal.newsapp.HomeActivity">
+
+    <TextView
+        android:id="@+id/btn1_1"
+        android:background="@drawable/btn_left_corner"
+        android:layout_width="60dp"
+        android:onClick="Open_International_Activity"
+        android:layout_height="60dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="123dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/btn2_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="Open_Local_Activity"
+        android:background="@drawable/btn_left_corner3"
+        android:layout_below="@+id/btn1_1"
+        android:layout_alignLeft="@+id/btn1_1"
+        android:layout_alignStart="@+id/btn1_1"
+        android:layout_marginTop="92dp" />
+
+    <TextView
+        android:id="@+id/btn2_2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/btn2_1"
+        android:layout_toEndOf="@+id/btn2_1"
+        android:layout_toRightOf="@+id/btn2_1"
+        android:background="@drawable/btn_right_corner3"
+        android:onClick="Open_Local_Activity"
+        android:paddingBottom="20dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:onClick="Open_Local_Activity"
+        android:layout_marginTop="103dp"
+        android:layout_below="@+id/btn1_2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/btn1_2"
+        android:onClick="Open_International_Activity"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/btn1_1"
+        android:layout_toEndOf="@+id/btn1_1"
+        android:layout_toRightOf="@+id/btn1_1"
+        android:background="@drawable/btn_right_corner"
+        android:paddingBottom="20dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="International"
+        android:textColor="#FFFFFF"
+        android:onClick="Open_International_Activity"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/btn1_1"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
